@@ -1,0 +1,235 @@
+@import 'universal';
+
+body{
+    width: 100%;
+    height: 100%;
+}
+
+#singIn{
+    width: 95%;
+    height: 100%;
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+    &__img{
+        width: 50%;
+        figure img{
+            width: 100%;
+        }
+    }
+    &__section{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding-top: 20px;
+        background-color: rgb(219, 219, 219);
+        form{
+            input{
+                border-radius: 10px;
+                border: none;
+                text-align: center;
+            }
+            button{
+                border-radius: 10px;
+                border: none;
+                width: 50px;
+            }
+        }
+    }
+}
+
+#singUp{
+    width: 100%;
+    gap: 40px;
+    padding-top: 20px;
+    h1{
+        text-align: center;
+    }
+        form{
+            width: 200px;
+            display: flex;
+            padding-top: 20px;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 auto;
+            gap: 10px;
+            background-color: rgb(211, 209, 209);
+            input{
+                border: none;
+                border-radius: 10px;
+                text-align: center;
+            }
+            button{
+                border: none;
+                border-radius: 10px;
+                width: 60px;
+            }
+        }
+}
+
+#home{
+    width: 100%;
+    display: flex;
+    #profile__edit{
+        background-color: rgb(221, 218, 218);
+        .arrow{
+            background-color: rgb(2, 180, 2);
+            color: white;
+        }
+        .name{
+            background-color: white;
+            nav img{
+                width: 20px;
+            }
+        }
+    }
+    .edit-hidden{
+        display: none;
+    }
+
+    .chats{
+        width: 35%;
+        display: flex;
+        flex-direction: column;
+        #profile{
+            padding: 10px;
+            figure img{
+                width: 50px;
+                height: 50px;
+                border-radius: 30px;
+                object-fit: cover;
+            }
+        }
+        .chats__section{
+            width: 100%;
+            .chats__search{
+                background-color: rgb(200, 200, 201);
+                padding: 10px;
+                input{
+                    width: 100%;
+                    height: 20px;
+                    text-align: center;
+                    border: none;
+                    border-radius: 10px;
+                }
+            }
+            .chats__contacts{
+                width: 100%;
+                .chats__img{
+                    width: 96%;
+                    padding: 10px;
+                    display: flex;
+                    font-size: 15px;
+                    background-color: rgb(247, 245, 245);
+                    figure img{
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 30px;
+                        object-fit: cover;
+                    }
+                    nav{
+                        display: flex;
+                        div{
+                            padding: 5px;
+                        }
+                    }
+                    .ms{
+                        display: flex;
+                        img{
+                            width: 10px;
+                        }
+                    }
+                }
+                .chats__img:hover{
+                    cursor: pointer;
+                        background-color: rgb(234, 232, 232);
+                }
+            }
+        }
+    }
+    #prof{
+        width: 65%;
+        #profile__chat{
+            width: 96%;
+            display: flex;
+            padding: 10px;
+            justify-content: space-between;
+            background-color: rgb(184, 184, 184);
+            figure img{
+                width: 50px;
+                height: 50px;
+                border-radius: 30px;
+            }
+            .profile__search img{
+                width: 35px;
+                height: 35px;
+            }
+            button{
+                border-radius: 10px;
+                width: 60px;
+                height: 30px;
+                border: none;
+            }
+        }
+        .send__messages{
+            width: 98%;
+            height: 80%;
+            background-color: rgb(158, 156, 156);
+            display: flex;
+            flex-direction: column;
+            nav{
+                width: 98%;
+                height: 80%;
+                background-color: rgb(217, 216, 216);
+                padding: 5px;
+                overflow-y: auto;
+                &::-webkit-scrollbar{
+                    width: 0;
+                }
+                #send__left{
+                    background-color: white;
+                    padding: 5px;
+                    border-radius: 0 8px 8px 8px;
+                    max-width: 350px;
+                    word-wrap: break-word;
+                }
+                #send__right{
+                    background-color: rgb(131, 252, 152);
+                    padding: 5px;
+                    border-radius: 8px 0 8px 8px;
+                    max-width: 350px;
+                    word-wrap: break-word;
+                    margin-left: auto;
+                }
+            }
+            form{
+                display: flex;
+                width: 100%;
+                gap: 10px;
+                padding: 10px;
+                figure img{
+                    width: 20px;
+                }
+                input{
+                    width: 85%;
+                    border: none;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:450px){
+    #home{
+        .chats{
+            width: 100%;
+            display: flex;
+        }
+        #prof{
+            display: none;
+        }
+    }
+}

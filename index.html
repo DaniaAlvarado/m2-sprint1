@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js" integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Sing In or Sing Up</title>
+</head>
+<body>
+    <main id="singIn">
+        <div id="singIn__img">
+            <figure>
+                <img src="./img/Desktop.png" alt="app" >
+            </figure>
+        </div>
+        <nav id="singIn__section">
+            <h1>Inicio de sesion o registrate</h1>
+            <h3>Inicia sesion</h3>
+            <form id="singInForm">
+                <input type="number" id="singInPhone" placeholder="Celular">
+                <input type="password" id="singInPassword" placeholder="Contraseña">
+                <button type="submit" id="singInButton">Sing In</button>
+            </form>
+            <div>
+                <span>¿No tienes cuenta?<a href="./pages/singUp.html">Regístrate</a></span>
+            </div>
+        </nav>
+    </main>
+    <script src="./scripts/main.js"></script>
+</body>
+</html>

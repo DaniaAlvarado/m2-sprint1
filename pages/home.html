@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/luxon/3.0.4/luxon.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Home</title>
+</head>
+<body>
+    <main id="home">
+        <section class="chats">
+            <div id="profile">
+
+            </div>
+            <nav class="chats__section">
+                <div class="chats__search">
+                    <input type="text" placeholder="Buscar o iniciar un nuevo chat">
+                </div>
+                <article class="chats__contacts">  
+
+                </article>
+            </nav>
+        </section>
+        <article id="profile__edit" class="edit-hidden">
+            <div class="arrow">
+                <img src="../icon/arrow-left.svg" alt="left" id="arrow">
+                <span>Perfil</span>
+            </div>
+            <div class="name">
+                <span>Tu Nombre</span>
+                <nav>
+                    <span class="yourName"></span>
+                    <img src="../icon/edit-2.svg" alt="edit">
+                </nav>
+            </div>
+        </article>
+        <section id="prof">
+            <div id="profile__chat">
+                <figure>
+                    <img src="https://cdnb.20m.es/sites/112/2019/04/cara6.jpg" alt="photo">
+                </figure>
+                <figure class="profile__search">
+                    <img src="../icon/search.svg" alt="search">
+                </figure>
+                <button id="btnCloseSession">Cerrar Sesión</button>
+            </div>
+            <article class="send__messages">
+                <nav class="send__chat">
+                    <!-- <div id="send__left">
+                        <p>holahomes</p>
+                    </div>
+                    <div id="send__right">
+                        <p>qmashome</p>
+                    </div> -->
+                </nav>
+                    <form class="form__input">
+                        <figure>
+                            <img src="../icon/smile.svg" alt="emojis">
+                        </figure>
+                        <figure>
+                            <img src="../icon/paperclip.svg" alt="clip">
+                        </figure>
+                        <input type="text" placeholder="Escribe un mensaje" id="inputChat">
+                        <figure>
+                            <img src="../icon/mic.svg" alt="mic">
+                        </figure>
+                    </form>
+            </article>
+        </section>
+    </main>
+
+    <script src="../scripts/home.js"></script>
+</body>
+</html>
